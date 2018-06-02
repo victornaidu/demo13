@@ -41,7 +41,7 @@
     "multiBranch" : true,
     "name" : "auth",
     "props" : {
-      "authChoice" : "2"
+      "authChoice" : "1"
     },
     "trilloVersion" : "1.0",
     "usingEnumsCatalog" : true,
