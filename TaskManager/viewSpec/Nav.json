@@ -4,10 +4,23 @@
   "hierSpecs" : [
     {
       "name" : "home_",
-      "displayName" : "My Tasks",
+      "displayName" : "Home",
       "actionSpec" : {
-        "name" : "menuItem1",
-        "type" : "viewAbsoluteNav"
+        "type" : "view"
+      },
+      "type" : "menuItem"
+    },
+    {
+      "name" : "Divider_1",
+      "displayName" : "Divider_1",
+      "type" : "divider"
+    },
+    {
+      "name" : "NewTask",
+      "displayName" : "Create Task",
+      "actionSpec" : {
+        "type" : "nonModalDialogView",
+        "viewName" : "Task"
       },
       "type" : "menuItem"
     }
