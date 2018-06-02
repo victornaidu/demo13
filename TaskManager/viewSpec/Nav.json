@@ -3,8 +3,12 @@
   "type" : "nav",
   "hierSpecs" : [
     {
-      "name" : "menuItem1",
-      "displayName" : "Menu Item 1",
+      "name" : "home_",
+      "displayName" : "My Tasks",
+      "actionSpec" : {
+        "name" : "menuItem1",
+        "type" : "viewAbsoluteNav"
+      },
       "type" : "menuItem"
     }
   ]
