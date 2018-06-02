@@ -40,7 +40,8 @@
     {
       "name" : "title",
       "type" : "string",
-      "persistent" : true
+      "persistent" : true,
+      "required" : true
     },
     {
       "name" : "description",

@@ -32,16 +32,6 @@
           "autoNav" : false,
           "childrenSpecs" : [
             {
-              "name" : "TaskList_2",
-              "alignment" : "top",
-              "autoNav" : false,
-              "flexGrow" : "1",
-              "reference" : "TaskList",
-              "tag" : "userDefined",
-              "trigger" : "_initial_/menuItem1",
-              "type" : "view"
-            },
-            {
               "name" : "TaskList_1",
               "alignment" : "top",
               "autoNav" : false,
