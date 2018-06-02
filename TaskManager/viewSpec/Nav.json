@@ -1,0 +1,11 @@
+{
+  "name" : "Nav",
+  "type" : "nav",
+  "hierSpecs" : [
+    {
+      "name" : "menuItem1",
+      "displayName" : "Menu Item 1",
+      "type" : "menuItem"
+    }
+  ]
+}

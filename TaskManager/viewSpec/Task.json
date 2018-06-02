@@ -1,0 +1,49 @@
+{
+  "name" : "Task",
+  "type" : "form",
+  "postUrl" : "/ds/save/TaskManager/TaskList/Task",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "/ds/object/TaskManager/TaskList/Task?id={{{params.id}}}"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "title",
+      "displayName" : "Task",
+      "editable" : true,
+      "required" : true,
+      "type" : "text"
+    },
+    {
+      "name" : "dueDate",
+      "displayName" : "Due Date",
+      "editable" : true,
+      "options" : {
+        "minDate" : "today",
+        "dateFormat" : "M d, Y h:i K",
+        "allowInput" : true,
+        "defaultHour" : 9
+      },
+      "type" : "date"
+    },
+    {
+      "name" : "priority",
+      "displayName" : "Priority",
+      "enumName" : "task-priority",
+      "editable" : true,
+      "type" : "select"
+    },
+    {
+      "name" : "close",
+      "displayName" : "Cancel",
+      "editable" : true,
+      "type" : "button"
+    },
+    {
+      "name" : "ok",
+      "displayName" : "Submit",
+      "editable" : true,
+      "type" : "submit"
+    }
+  ]
+}

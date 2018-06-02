@@ -1,0 +1,40 @@
+<div class="trillo-form" name="NewTask" nm="NewTask">
+  <form data-container="">
+    <div data-child-type="text" class="form-group">
+      <label data-label="">Task</label>
+      <input data-input="" type="text" class="form-control js-required" nm="title">
+    </div>
+    <div data-child-type="date" class="form-group">
+      <label data-label="">Due Date</label>
+      <input data-input="" type="date" class="form-control flatpickr-input" placeholder="Click to pick a date" nm="dueDate" required readonly="readonly">
+    </div>
+    <div data-child-type="select" class="form-group">
+      <label data-label="">Priority</label>
+      <select data-input="" class="form-control custom-select" nm="priority" enum-name="task-priority">
+        <option value="0">
+          None
+        </option>
+        <option value="1">
+          Urgent
+        </option>
+        <option value="2">
+          High
+        </option>
+        <option value="3">
+          Medium
+        </option>
+        <option value="4">
+          Low
+        </option>
+      </select>
+    </div>
+    <button data-child-type="button" type="button" class="btn btn-primary" nm="close" name="close">
+      Cancel
+    </button>
+    <button data-child-type="submit" type="submit" class="btn btn-primary" nm="ok" name="ok">
+      Submit
+    </button>
+  </form>
+  <small class="form-control-feedback trillo-display-none js-field-error"></small>
+  <small class="form-text text-muted trillo-display-none js-field-message"></small>
+</div>

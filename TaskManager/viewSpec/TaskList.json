@@ -1,0 +1,54 @@
+{
+  "name" : "TaskList",
+  "type" : "table",
+  "apiSpec" : {
+    "impl" : "Trillo.RestAdapter",
+    "serviceUrl" : "ds/page/TaskManager/TaskList",
+    "body" : {
+      "className" : "Task",
+      "start" : 1,
+      "size" : 10000,
+      "orderBy" : "completed asc, updatedAt desc"
+    },
+    "method" : "post"
+  },
+  "fieldSpecs" : [
+    {
+      "name" : "Column_1",
+      "displayName" : "Column_1",
+      "type" : "readonly"
+    },
+    {
+      "name" : "Column_2",
+      "displayName" : "Column_2",
+      "type" : "readonly"
+    },
+    {
+      "name" : "Column_3",
+      "displayName" : "Column_3",
+      "type" : "readonly"
+    }
+  ],
+  "actionSpecs" : [
+    {
+      "name" : "newTask",
+      "type" : "view"
+    },
+    {
+      "name" : "vehicleId",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "id",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "taskEdit",
+      "type" : "viewAbsoluteNav"
+    },
+    {
+      "name" : "editTask",
+      "type" : "viewAbsoluteNav"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name" : "NewTask",
+  "type" : "form",
+  "controller" : "manage.TaskC",
+  "originalData" : {
+    "priority" : "3",
+    "status" : "0"
+  },
+  "postUrl" : "/ds/save/TaskManager/TaskList/Task",
+  "fieldSpecs" : [
+    {
+      "name" : "title",
+      "displayName" : "Task",
+      "editable" : true,
+      "required" : true,
+      "type" : "text"
+    },
+    {
+      "name" : "dueDate",
+      "displayName" : "Due Date",
+      "editable" : true,
+      "options" : {
+        "minDate" : "today",
+        "dateFormat" : "M d, Y h:i K",
+        "allowInput" : true,
+        "defaultHour" : 9
+      },
+      "type" : "date"
+    },
+    {
+      "name" : "priority",
+      "displayName" : "Priority",
+      "enumName" : "task-priority",
+      "editable" : true,
+      "type" : "select"
+    },
+    {
+      "name" : "close",
+      "displayName" : "Cancel",
+      "editable" : true,
+      "type" : "button"
+    },
+    {
+      "name" : "ok",
+      "displayName" : "Submit",
+      "editable" : true,
+      "type" : "submit"
+    }
+  ]
+}

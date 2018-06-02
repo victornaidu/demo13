@@ -1,0 +1,55 @@
+<div class="trillo-table" name="TaskList" nm="TaskList">
+  <table data-container="" class="table">
+    <thead>
+      <tr data-table-header="">
+        <th style="width:10%" class="hide-800">
+          Id
+        </th>
+        <th style="width:15%">
+          Due
+        </th>
+        <th style="width:55%">
+          Task
+        </th>
+        <th style="width:10%">
+          Priority
+        </th>
+        <th style="width:5%; text-align:center">
+          Action
+        </th>
+        <th style="width:5%">
+          <i class="zmdi zmdi-check-circle"></i>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-table-row="">
+        <td data-child-type="readonly" nm="Column_1" data-field-type="readonly">
+          <span class="js-tool table-tool" nm="id" action-type="viewAbsoluteNav" action-target="id={{Task.id}};">{{{id}}}</span>
+        </td>
+        <td data-child-type="readonly" data-field-type="readonly">
+          <span nm="dueDate" field-type="datetime" format="M/D/YY - h:mm A"></span>
+        </td>
+        <td data-child-type="readonly" nm="title" data-field-type="readonly">
+        </td>
+        <td data-child-type="readonly" nm="priority" data-field-type="readonly">
+        </td>
+        <td class="skip" data-child-type="button" data-display-name="Button" style="text-align:center">
+          <span class="table-buttons">
+                <button class="btn btn-sm btn-secondary waves-effect" nm="editTask" action-type="viewAbsoluteNav" action-target=
+                "task;id={{id}}" title="Edit task details">
+                  <i class="zmdi zmdi-edit"></i> Edit
+                </button>
+              </span>
+        </td>
+        <td data-child-type="checkbox" data-display-name="Checkbox">
+          <label class="custom-control custom-checkbox op-check-box">
+                <input data-input="" type="checkbox" class="custom-control-input" nm="completed"> 
+                <span class="custom-control-indicator"></span>
+                <span data-label="" class="custom-control-description"></span>
+              </label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
