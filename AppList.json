@@ -4,6 +4,8 @@
     "defaultPage" : true,
     "description" : "Simple task manager application created using the Trillo Framework.",
     "displayName" : "Simple Task Manager",
+    "htmlHeadTitle" : "Simple Task Manager",
+    "keywords" : "Simple Task Manager",
     "linkedApp" : "shared",
     "metaDataPubliclyViewable" : false,
     "multiBranch" : true,
@@ -41,7 +43,7 @@
     "multiBranch" : true,
     "name" : "auth",
     "props" : {
-      "authChoice" : "1"
+      "authChoice" : "2"
     },
     "trilloVersion" : "1.0",
     "usingEnumsCatalog" : true,
