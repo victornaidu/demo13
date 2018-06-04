@@ -19,7 +19,7 @@
 
   TaskListC.showForm = function showForm(selectedObj) {
     this.showView({
-      name: "EditTask",
+      name: "Task",
       container: 'trillo-dialog2-container',
       data: selectedObj
     });

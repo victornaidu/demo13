@@ -1,7 +1,7 @@
 {
   "name" : "Task",
   "type" : "form",
-  "postUrl" : "/ds/save/TaskManager/TaskList/Task",
+  "postUrl" : "/ds/update/TaskManager/TaskList/Task",
   "apiSpec" : {
     "impl" : "Trillo.RestAdapter",
     "serviceUrl" : "/ds/object/TaskManager/TaskList/Task?id={{{params.id}}}"
