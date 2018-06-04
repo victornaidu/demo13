@@ -40,12 +40,12 @@
     {
       "name" : "title",
       "type" : "string",
-      "persistent" : true,
-      "required" : true
+      "persistent" : true
     },
     {
       "name" : "description",
       "type" : "string",
+      "defaultValue" : "2",
       "length" : 4096,
       "listHidden" : true,
       "persistent" : true

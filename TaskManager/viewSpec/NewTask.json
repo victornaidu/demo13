@@ -4,8 +4,7 @@
   "controller" : "manage.TaskC",
   "originalData" : {
     "priority" : "3",
-    "status" : "0",
-    "dueDate" : "today"
+    "status" : "0"
   },
   "postUrl" : "/ds/save/TaskManager/TaskList/Task",
   "fieldSpecs" : [
@@ -22,8 +21,9 @@
       "editable" : true,
       "options" : {
         "minDate" : "today",
-        "dateFormat" : "M d, Y",
-        "allowInput" : true
+        "dateFormat" : "M d, Y h:i K",
+        "allowInput" : true,
+        "defaultHour" : 9
       },
       "type" : "date"
     },
